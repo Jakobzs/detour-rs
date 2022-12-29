@@ -126,10 +126,16 @@ struct SliceableMemoryMap(MmapMut);
 
 impl SliceableMemoryMap {
   pub fn as_slice(&self) -> &[u8] {
-    &self.0[..]
+    let x = &self.0[..];
+
+    println!("as_slice called: {:?}", x);
+
+    x
   }
 
   pub fn as_mut_slice(&mut self) -> &mut [u8] {
+    println!("as_mut_slice called for Mmap");
+
     &mut self.0[..]
   }
 }
