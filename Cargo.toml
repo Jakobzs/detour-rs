@@ -1,6 +1,6 @@
 [package]
 name = "detour3"
-version = "0.0.0"
+version = "0.1.0"
 authors = ["Elliott Linder <elliott.darfink@gmail.com>, Jakobzs <31919330+Jakobzs@users.noreply.github.com>"]
 license = "BSD-2-Clause"
 repository = "https://github.com/Jakobzs/detour-rs"

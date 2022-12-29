@@ -45,7 +45,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-detour = "0.8.0"
+detour3 = "0.1.0"
 ```
 
 ## Example
