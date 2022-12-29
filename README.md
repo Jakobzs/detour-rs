@@ -2,7 +2,7 @@
 
 # `detour-rs`
 
-[![Github Actions Status](https://github.com/Jakobzs/detour-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/Jakobzs/detour-rs/actions/workflows/rust.yml)
+[![Github Actions Status](https://github.com/Jakobzs/detour-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/Jakobzs/detour-rs)
 [![crates.io version][crate-shield]][crate]
 [![Documentation][docs-shield]][docs]
 [![Language (Rust)][rust-shield]][rust]
