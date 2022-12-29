@@ -104,8 +104,9 @@ impl ProximityAllocator {
 
   /// Tries to allocate fixed memory at the specified address.
   fn allocate_fixed_pool(address: *const (), size: usize) -> Option<SlicePool<u8>> {
-    // Try to allocate memory at the specified address
+    println!("allocate_fixed_pool called: {:?} (size: {})", address, size);
 
+    // Try to allocate memory at the specified address
     let mut mmap_options = MmapOptions::new();
     let mut mmap = mmap_options
       .len(size)
