@@ -1,15 +1,15 @@
 [package]
-authors = ["Elliott Linder <elliott.darfink@gmail.com>"]
+authors = ["Elliott Linder <elliott.darfink@gmail.com>, Jakobzs <31919330+Jakobzs@users.noreply.github.com>"]
 description = "A cross-platform detour library written in Rust"
-documentation = "https://docs.rs/detour"
-homepage = "https://github.com/darfink/detour-rs"
+documentation = "https://docs.rs/detour3"
+homepage = "https://github.com/Jakobzs/detour-rs"
 keywords = ["detour", "hook", "function", "api", "redirect"]
 license = "BSD-2-Clause"
 name = "detour"
 readme = "README.md"
-repository = "https://github.com/darfink/detour-rs"
-version = "0.9.0"
-edition = "2018"
+repository = "https://github.com/Jakobzs/detour-rs"
+version = "0.0.0"
+edition = "2021"
 
 [badges]
 azure-devops = { project = "darfink/detour-rs", pipeline = "darfink.detour-rs" }
