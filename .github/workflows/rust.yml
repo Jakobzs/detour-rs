@@ -7,16 +7,16 @@ jobs:
 
     strategy:
         matrix:
-          name: [linux, windows]
-          #name: [linux, windows, macos]
+          #name: [linux, windows]
+          name: [linux, windows, macos]
 
           include:
             - name: linux
               os: ubuntu-latest
             - name: windows
               os: windows-latest
-            #- name: macos
-            #  os: macos-latest
+            - name: macos
+              os: macos-latest
     
     steps:
       - uses: actions/checkout@v3
