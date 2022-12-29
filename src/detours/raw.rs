@@ -6,8 +6,8 @@ use crate::error::Result;
 /// # Example
 ///
 /// ```rust
-/// # use detour::Result;
-/// use detour::RawDetour;
+/// # use detour3::Result;
+/// use detour3::RawDetour;
 /// use std::mem;
 ///
 /// fn add5(val: i32) -> i32 {

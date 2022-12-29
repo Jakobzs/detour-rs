@@ -54,7 +54,7 @@ detour = "0.8.0"
 
 ```rust
 use std::error::Error;
-use detour::static_detour;
+use detour3::static_detour;
 
 static_detour! {
   static Test: /* extern "X" */ fn(i32) -> i32;
