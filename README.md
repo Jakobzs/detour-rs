@@ -2,7 +2,7 @@
 
 # `detour-rs`
 
-[![Azure build Status][azure-shield]][azure]
+[![Github Actions Status](https://github.com/jakobzs/detour-rs/workflows/rust/badge.svg)](https://github.com/jakobzs/detour-rs)
 [![crates.io version][crate-shield]][crate]
 [![Documentation][docs-shield]][docs]
 [![Language (Rust)][rust-shield]][rust]
