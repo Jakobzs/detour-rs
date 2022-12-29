@@ -107,7 +107,14 @@ impl ProximityAllocator {
     // Try to allocate memory at the specified address
 
     let mut mmap_options = MmapOptions::new();
-    let mut mmap = mmap_options.len(size).map_anon().unwrap();
+    let mut mmap = mmap_options
+      .len(size)
+      .map_anon()
+      .unwrap()
+      .make_exec()
+      .unwrap()
+      .make_mut()
+      .unwrap();
 
     Some(SlicePool::new(SliceableMemoryMap(mmap)))
   }
