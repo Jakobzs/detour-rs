@@ -119,11 +119,11 @@ struct SliceableMemoryMap(MmapMut);
 
 impl SliceableMemoryMap {
   pub fn as_slice(&self) -> &[u8] {
-    unsafe { slice::from_raw_parts(self.0.data(), self.0.len()) }
+    &self.0[..]
   }
 
   pub fn as_mut_slice(&mut self) -> &mut [u8] {
-    unsafe { slice::from_raw_parts_mut(self.0.data(), self.0.len()) }
+    &mut self.0[..]
   }
 }
 
