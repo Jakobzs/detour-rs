@@ -19,9 +19,9 @@ cfg-if = "1.0.0"
 generic-array = "0.14.5"
 lazy_static = "1.4"
 libc = "0.2.126"
-mmap = { package = "mmap-fixed-fixed", version = "0.1.1" }
 region = "3.0.0"
 slice-pool = "0.4.1"
+memmap2 = "0.5"
 
 [dev-dependencies]
 matches = "0.1.9"

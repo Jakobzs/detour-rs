@@ -1,3 +1,4 @@
+use memmap2::{MmapMut, MmapOptions};
 use std::ops::Range;
 use std::slice;
 
@@ -104,24 +105,17 @@ impl ProximityAllocator {
   /// Tries to allocate fixed memory at the specified address.
   fn allocate_fixed_pool(address: *const (), size: usize) -> Option<SlicePool<u8>> {
     // Try to allocate memory at the specified address
-    mmap::MemoryMap::new(
-      size,
-      &[
-        mmap::MapOption::MapReadable,
-        mmap::MapOption::MapWritable,
-        mmap::MapOption::MapExecutable,
-        mmap::MapOption::MapAddr(address as *const _),
-      ],
-    )
-    .ok()
-    .map(SliceableMemoryMap)
-    .map(SlicePool::new)
+
+    let mut mmap_options = MmapOptions::new();
+    let mut mmap = mmap_options.len(size).map_anon().unwrap();
+
+    Some(SlicePool::new(SliceableMemoryMap(mmap)))
   }
 }
 
 // TODO: Use memmap-rs instead
 /// A wrapper for making a memory map compatible with `SlicePool`.
-struct SliceableMemoryMap(mmap::MemoryMap);
+struct SliceableMemoryMap(MmapMut);
 
 impl SliceableMemoryMap {
   pub fn as_slice(&self) -> &[u8] {
