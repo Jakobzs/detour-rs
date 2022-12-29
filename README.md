@@ -131,13 +131,11 @@ derivative code of his work.
   trailing `NOP` instructions will be replaced, to make room for the detour.*
 
 <!-- Links -->
-[azure-shield]: https://img.shields.io/azure-devops/build/darfink/detour-rs/2/master?label=Azure%20Pipelines&logo=azure-pipelines&style=flat-square
-[azure]: https://dev.azure.com/darfink/detour-rs/_build/latest?definitionId=1&branchName=master
 [crate-shield]: https://img.shields.io/crates/v/detour.svg?style=flat-square
-[crate]: https://crates.io/crates/detour
+[crate]: https://crates.io/crates/detour3
 [rust-shield]: https://img.shields.io/badge/powered%20by-rust-blue.svg?style=flat-square
 [rust]: https://www.rust-lang.org
 [docs-shield]: https://img.shields.io/badge/docs-crates-green.svg?style=flat-square
-[docs]: https://docs.rs/detour/
+[docs]: https://docs.rs/detour3/
 [minhook-author]: https://github.com/Jascha-N
 [minhook]: https://github.com/Jascha-N/minhook-rs/
