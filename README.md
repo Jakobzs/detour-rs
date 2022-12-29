@@ -131,7 +131,7 @@ derivative code of his work.
   trailing `NOP` instructions will be replaced, to make room for the detour.*
 
 <!-- Links -->
-[crate-shield]: https://img.shields.io/crates/v/detour.svg?style=flat-square
+[crate-shield]: https://img.shields.io/crates/v/detour3.svg?style=flat-square
 [crate]: https://crates.io/crates/detour3
 [rust-shield]: https://img.shields.io/badge/powered%20by-rust-blue.svg?style=flat-square
 [rust]: https://www.rust-lang.org
